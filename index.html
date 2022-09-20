@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Scoreboard</title>
+    <link href="http://fonts.cdnfonts.com/css/60s-scoreboard" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Website Icon -->
+    <link rel="shortcut icon" type="image/png" href="image/basketball-icon.png">
+
+    <!-- Font Awsome for Social Media Icons-->
+    <script src="https://kit.fontawesome.com/0e4449550a.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- Start of Scoreboard Container -->
+    <div class="scoreboard-container">
+        <!-- Start of Sub-Container -->
+        <div class="scoreboard-subContainer">
+            <!-- Start of Scoreboard -->
+            <div class="scoreboard">
+                <!-- Start of Section 1 -->
+                <h1 class="scoreboard-label">SCOREBOARD</h1>
+                <div class="section-One">
+                    <div class="first-content">
+                        <label class="home-label">HOME</label>
+                        <h1 id="home-scores">0</h1>
+                    </div>
+                    <div class="second-content">
+                        <label class="time-label">TIME</label><br>
+                        <div class="timeClock">
+                            <input id="minutes" type="number" class="time" value="10"><p class="colon">:</p>
+                            <input id="seconds" type="number" class="time" value="00">
+                        </div>
+                        <!-- <h1 id="game-time">00:00</h1> -->
+                        <h1 id="game-quarter">0</h1>
+                        <label class="quarter-label">QUARTER</label>
+                    </div>
+                    <div class="third-content">
+                        <label class="guest-label">GUEST</label>
+                        <h1 id="guest-scores">0</h1>
+                    </div>
+                </div>
+                <!-- End of Section 1 -->
+
+                <!-- Start of Section 2 -->
+                <div class="section-Two">
+                    <div class="fourt-content">
+                        <label class="foul-label">FOULS</label>
+                        <h1 id="home-fouls">0</h1>
+                    </div>
+                    <div class="fifth-content">
+                        <h1 id="shotclock-time">24</h1>
+                        <label class="shotclock-label">SHOT CLOCK</label><br>
+                    </div>
+                    <div class="sixth-content">
+                        <label class="foul-label">FOULS</label>
+                        <h1 id="guest-fouls">0</h1>
+                    </div>
+                </div>
+                <!-- End of Section 2 -->
+            </div>
+            <!-- End of Scoreboard -->
+
+            <!-- Start of Controls -->
+            <div class="controls">
+                <!-- Start of Section 3 -->
+                <h1 class="control-label">CONTROLLER</h1>
+                <div class="section-Three">
+                    <div class="home-controls">
+                        <label class="heading-One">Home</label><br>
+                        <button id="home-PlusBtn">+</button>
+                        <button id="home-MinusBtn">-</button>
+                    </div>
+                    <div class="time-controls">
+                        <label class="heading-Two">Time</label><br>
+                        <button id="gameTime-startStop">PLAY/STOP</button>
+                        <button id="gameTime-reset">RESET</button>
+                        <label class="heading-Three">Quarter</label><br>
+                        <button id="btnOne">1</button>
+                        <button id="btnTwo">2</button>
+                        <button id="btnThree">3</button>
+                        <button id="btnFour">4</button>
+                    </div>
+                    <div class="guest-controls">
+                        <label class="heading-Four">Guest</label><br>
+                        <button id="guest-PlusBtn">+</button>
+                        <button id="guest-MinusBtn">-</button>
+                    </div>
+                </div>
+                <!-- End of Section 3-->
+
+                <!-- Start of Section 4 -->
+                <div class="section-Four">
+                    <div class="home-foulNumber">
+                        <h1 class="heading-Five">Fouls</h1>
+                        <button id="hFouls-PlusBtn">+</button>
+                        <button id="hFouls-MinusBtn">-</button>
+                    </div>
+                    <div class="shotclockButtons">
+                        <h1 class="heading-Six">Shot Clock</h1>
+                        <button id="shotclock-playStop">PLAY/STOP</button>
+                        <button id="shotclock-reset">RESET</button>
+                    </div>
+                    <div class="guest-foulNumber">
+                        <h1 class="heading-Seven">Fouls</h1>
+                        <button id="gFouls-PlusBtn">+</button>
+                        <button id="gFouls-MinusBtn">-</button>
+                    </div>
+                </div>
+                <!-- End of Section 4 -->
+            </div>
+            <!-- End of Controls -->
+        </div>
+        <!-- End of Sub-Container -->
+    </div>
+    <!-- End of Scoreboard Container -->
+
+    
+    
+
+    <!-- Start of Section 5 -->
+    <div class="section-Five">
+        <div class="footer">
+            <div class="socmedLinksFooter">
+                <a href="https://www.facebook.com/akosijcjacobe" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/JCJacobe2" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/jcjacobe2/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/JCJ02" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <h1 class="footerName">&copy;Copyright 2022 John Carlo P. Jacobe</h1>
+        </div>
+    </div>
+    <!-- End of Section 5 -->
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
