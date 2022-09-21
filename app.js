@@ -1,4 +1,4 @@
-// Home Variables
+// Initialize Home Controller 
 const 
     homeScores = document.getElementById('home-scores'),
     homePlusBtn = document.getElementById('home-PlusBtn'),
@@ -14,7 +14,7 @@ homeMinusBtn.addEventListener('click', function() {
     homeScores.textContent = valueOne -= 1;
 });
 
-// Guest Variables
+// Initialize Guest Controller
 const 
     guestScores = document.getElementById('guest-scores'),
     guestPlusBtn = document.getElementById('guest-PlusBtn'),
@@ -30,7 +30,7 @@ guestMinusBtn.addEventListener('click', function() {
     guestScores.textContent = valueTwo -= 1;
 });
 
-// Quarter Variables
+// Initialize Quarter Controller
 const 
     gameQuarter = document.getElementById('game-quarter'),
     buttonOne = document.getElementById('btnOne'),
@@ -76,7 +76,10 @@ guestFoulsMinusBtn.addEventListener('click', function(){
     guestFouls.textContent = valueFour -= 1 
 });
 
-// Game Time Controller
+
+// Game Timer Controller
+
+// Initialize Game Timer Controller
 var 
     startStopBtn = document.getElementById('gameTime-startStop'),
     resetBtn = document.getElementById('gameTime-reset'),
@@ -98,6 +101,7 @@ function gameTimer() {
     }
 }
 
+// PLAY/STOP Button
 startStopBtn.addEventListener('click', function(){
     gameTimerRunning ? clearInterval(gameTimeCounter) : gameTimeCounter = setInterval(gameTimer, 1000);
     gameTimerRunning = !gameTimerRunning;
@@ -105,6 +109,7 @@ startStopBtn.addEventListener('click', function(){
 
 });
 
+// RESET Button
 resetBtn.addEventListener('click', function(){
     clearInterval(gameTimeCounter);
     minutes.value = 10;
@@ -115,6 +120,8 @@ resetBtn.addEventListener('click', function(){
 
 
 // Shot Clock Controller
+
+// Initialize Shot Clock Controller
 const
     shotclockTimer = document.getElementById('shotclock-time'),
     playStop = document.getElementById('shotclock-playStop'),
