@@ -95,7 +95,7 @@ function gameTimer() {
         seconds.value = 0;
     }else if(seconds.value != 0) {
         seconds.value--;
-    }else if(minutes.value != 0 && seconds.value == 0) {
+    }else if(minutes.value != 0 && seconds.value == 0) { 
         seconds.value = 59;
         minutes.value--;
     }
